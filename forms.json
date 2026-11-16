@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "updated": "2026-11-16",
+  "forms": [
+    {
+      "id": "sa100",
+      "name": "Self Assessment tax return",
+      "detect": [
+        [
+          "\\bSA100\\b"
+        ],
+        [
+          "self assessment tax return"
+        ]
+      ],
+      "what": "This is the main HMRC Self Assessment tax return. It tells HMRC about your income so they can work out how much tax you owe.",
+      "doNext": [
+        "Check the deadline on your letter or on GOV.UK. Online returns have a later deadline than paper ones.",
+        "Gather your income records before you start.",
+        "If you are not sure you need to send one, GOV.UK has a checker."
+      ],
+      "watchOut": "Late returns can lead to penalties, so do not leave it to the last day.",
+      "link": "https://www.gov.uk/self-assessment-tax-returns",
+      "reviewed": "2026-11",
+      "questions": []
+    },
+    {
+      "id": "p800",
+      "name": "Tax calculation letter (P800)",
+      "detect": [
+        [
+          "\\bP800\\b"
+        ],
+        [
+          "tax calculation",
+          "(overpaid|underpaid)"
+        ]
+      ],
+      "what": "This is a tax calculation letter from HMRC. It says you have paid too much or too little tax for a tax year.",
+      "doNext": [
+        "Check the figures against what you know about your pay.",
+        "If it says you are owed money, follow the steps in the letter to claim it.",
+        "If it says you owe money, the letter explains how to pay."
+      ],
+      "watchOut": "These letters come by post. Be careful with emails, texts or calls about refunds, and do not use links in them. Sign in to GOV.UK yourself instead.",
+      "link": "https://www.gov.uk/tax-overpayments-and-underpayments",
+      "reviewed": "2026-11",
+      "questions": []
+    },
+    {
+      "id": "p60",
+      "name": "End of year pay and tax summary (P60)",
+      "detect": [
+        [
+          "\\bP60\\b"
+        ]
+      ],
+      "what": "A P60 is a yearly summary from your employer of your pay and the tax taken, for the tax year that ended on 5 April.",
+      "doNext": [
+        "Keep it somewhere safe. You may need it to prove your income or to claim back overpaid tax.",
+        "If you lose it, ask your employer for a copy."
+      ],
+      "watchOut": "If you were working for your employer on 5 April, they should give you one by 31 May.",
+      "link": "https://www.gov.uk/paye-forms-p45-p60-p11d",
+      "reviewed": "2026-11",
+      "questions": []
+    },
+    {
+      "id": "p45",
+      "name": "Leaving a job form (P45)",
+      "detect": [
+        [
+          "\\bP45\\b"
+        ]
+      ],
+      "what": "A P45 is given to you by your employer when you stop working for them. It shows your pay and tax so far in that tax year.",
+      "doNext": [
+        "Keep Part 1A for your own records.",
+        "Give Parts 2 and 3 to your new employer, or to Jobcentre Plus if you are not working."
+      ],
+      "watchOut": "If you lose it, you cannot get a replacement. Your new employer can ask you to fill in a starter checklist instead.",
+      "link": "https://www.gov.uk/paye-forms-p45-p60-p11d",
+      "reviewed": "2026-11",
+      "questions": []
+    },
+    {
+      "id": "p11d",
+      "name": "Company benefits form (P11D)",
+      "detect": [
+        [
+          "\\bP11D\\b"
+        ]
+      ],
+      "what": "A P11D tells you the value of company benefits your employer gave you, such as a company car or private medical insurance.",
+      "doNext": [
+        "Check the benefits and values listed look right.",
+        "Keep it with your tax records."
+      ],
+      "watchOut": "You may not get one if your employer takes the tax on your benefits out of your pay.",
+      "link": "https://www.gov.uk/paye-forms-p45-p60-p11d",
+      "reviewed": "2026-11",
+      "questions": []
+    }
+  ]
+}
